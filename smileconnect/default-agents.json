@@ -1,0 +1,553 @@
+{
+  "name": "default-agents",
+  "config": {
+    "cmdbobject": {
+      "basequery": "'Data Set Id' = \"BMC.ASSET\"",
+      "fields": [
+        "Instance Id",
+        "Tag Number",
+        "Name",
+        "AssetLifecycleStatus",
+        "Category",
+        "Item",
+        "Type",
+        "Availability",
+        "Confidentiality",
+        "Integrity",
+        "Authenticity",
+        "Model Number",
+        "Class Id",
+        "Reconciliation Identity",
+        "Short Description",
+        "Room",
+        "Mark As Deleted",
+        "Data Set Id"
+      ],
+      "constants": [],
+      "fields_AST:ComputerSystem": [
+        "DNS Host Name"
+      ],
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      },
+      "fields_AST:LANEndpoint": [
+        "MACAddress"
+      ]
+    },
+    "change": {
+      "basequery": "1=2",
+      "fields": [],
+      "constants": [],
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      },
+      "attachmentScripts": {
+        "POST": {
+          "afterExecution": []
+        }
+      }
+    },
+    "changeWorklog": {
+      "fields": [],
+      "constants": [],
+      "basequery": "1=2",
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      },
+      "attachmentScripts": {
+        "POST": {
+          "afterExecution": []
+        }
+      }
+    },
+    "workOrder": {
+      "basequery": "1=2",
+      "fields": [],
+      "constants": [],
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      }
+    },
+    "person": {
+      "basequery": "1=1",
+      "fields": [
+        "Person ID",
+        "Full Name",
+        "Remedy Login ID",
+        "Internet E-mail",
+        "Department",
+        "Accounting Number",
+        "JobTitle"
+      ],
+      "constants": [],
+      "scripts": {}
+    },
+    "incident": {
+      "basequery": "1=1",
+      "fields": [
+        "Incident Number",
+        "Status",
+        "Categorization Tier 1",
+        "Categorization Tier 2",
+        "Categorization Tier 3",
+        "Resolution Category",
+        "Resolution Category Tier 2",
+        "Resolution Category Tier 3",
+        "Product Categorization Tier 1",
+        "Product Categorization Tier 2",
+        "Product Categorization Tier 3",
+        "Product Name",
+        "Manufacturer",
+        "Detailed Decription",
+        "Description",
+        "Status_Reason",
+        "Impact",
+        "Priority",
+        "Urgency",
+        "Assigned Group ID",
+        "Owner Group ID",
+        "Vendor Group ID",
+        "Person ID",
+        "Direct Contact Person ID",
+        "Vendor Ticket Number",
+        "Desk Location",
+        "Submitter",
+        "Last Modified By",
+        "Submit Date",
+        "ServiceCI",
+        "Resolution"
+      ],
+      "constants": [],
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      },
+      "attachmentScripts": {
+        "POST": {
+          "afterExecution": []
+        }
+      }
+    },
+    "workOrderWorklog": {
+      "fields": [],
+      "constants": [],
+      "basequery": "1=2",
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      },
+      "attachmentScripts": {
+        "POST": {
+          "afterExecution": []
+        }
+      }
+    },
+    "incidentWorklog": {
+      "fields": [
+        "Description",
+        "Detailed Description"
+      ],
+      "constants": [
+        {
+          "name": "Status",
+          "value": "Enabled"
+        },
+        {
+          "name": "Work Log Type",
+          "value": "General Information"
+        },
+        {
+          "name": "Communication Source",
+          "value": "Other"
+        },
+        {
+          "name": "View Access",
+          "value": "Public"
+        }
+      ],
+      "basequery": "'View Access' = \"Public\" or 'Work Log Type' = 11000",
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      },
+      "attachmentScripts": {
+        "POST": {
+          "afterExecution": []
+        }
+      }
+    },
+    "problem": {
+      "basequery": "1=2",
+      "fields": [],
+      "constants": [],
+      "scripts": {}
+    },
+    "problemWorklog": {
+      "fields": [],
+      "constants": [],
+      "basequery": "1=2",
+      "scripts": {
+        "GET": {
+          "preMapping": [],
+          "postMapping": []
+        },
+        "PUT": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        },
+        "POST": {
+          "preMapping": [],
+          "postMapping": [],
+          "afterExecution": []
+        }
+      },
+      "attachmentScripts": {
+        "POST": {
+          "afterExecution": []
+        }
+      }
+    },
+    "task": {
+      "basequery": "1=1",
+      "fields": [
+        "Status",
+        "InstanceId",
+        "Sequence",
+        "Service Cat Tier 1",
+        "Service Cat Tier 2",
+        "Service Cat Tier 3",
+        "Product Cat Tier 1",
+        "Product Cat Tier 2",
+        "Product Cat Tier 3",
+        "Product Name",
+        "Summary",
+        "Notes",
+        "StatusReasonSelection",
+        "Scheduled Start Date",
+        "Scheduled End Date",
+        "Assignee Group ID",
+        "Customer Person ID",
+        "Requested By Person ID",
+        "Actual Start Date",
+        "Actual End Date",
+        "Character 06",
+        "Character 01",
+        "Support Company",
+        "Assignee Organization",
+        "Assignee Group"
+      ],
+      "constants": [
+        {
+          "name": "Location Company",
+          "value": "Calbro Services"
+        },
+        {
+          "name": "TaskType",
+          "value": "2000"
+        },
+        {
+          "name": "Status",
+          "value": "1000"
+        }
+      ],
+      "scripts": {}
+    },
+    "taskWorklog": {
+      "constants": [
+        {
+          "name": "Status",
+          "value": "Enabled"
+        },
+        {
+          "name": "WorkInfoType",
+          "value": "General Information"
+        },
+        {
+          "name": "Communication Source",
+          "value": "Other"
+        },
+        {
+          "name": "View Access",
+          "value": "Internal"
+        }
+      ],
+      "basequery": "1=1",
+      "fields": [
+        "Summary",
+        "Notes"
+      ],
+      "scripts": {},
+      "attachmentScripts": {}
+    },
+    "flowBuilder": {
+      "constants": [
+        {
+          "name": "Location Company",
+          "value": "Calbro Services"
+        }
+      ],
+      "basequery": "",
+      "fields": [],
+      "scripts": {}
+    },
+    "supportGroup": {
+      "basequery": "1=1",
+      "fields": [
+        "Support Group ID",
+        "Support Group Name",
+        "Support Organization",
+        "Company"
+      ],
+      "constants": [],
+      "scripts": {}
+    },
+    "organisation": {
+      "basequery": "1=2",
+      "fields": [],
+      "constants": [],
+      "scripts": {}
+    },
+    "problemTemplate": {
+      "fields": [
+        "InstanceId",
+        "Template Name"
+      ],
+      "constants": [],
+      "basequery": "1=1",
+      "scripts": {}
+    },
+    "incidentTemplate": {
+      "basequery": "1=2",
+      "fields": [],
+      "constants": [],
+      "scripts": {}
+    },
+    "changeTemplate": {
+      "basequery": "",
+      "fields": [],
+      "constants": [],
+      "scripts": {}
+    },
+    "workOrderTemplate": {
+      "fields": [],
+      "basequery": "",
+      "constants": [],
+      "scripts": {}
+    },
+    "taskTemplate": {
+      "basequery": "1=1",
+      "fields": [],
+      "constants": [],
+      "scripts": {}
+    },
+    "options": {
+      "dateFormat": "",
+      "allowDynamicImpersonate": true,
+      "translateSelectionFields": true,
+      "documentationLink": "https://smileconnect.manyosdocs.de/#/configuration/scriptEndpoints",
+      "openAPIDescription": "SMILEconnect interface for autonomous AI agents: incident processing (read, worklogs, resolve), CMDB read access and agent-specific script endpoints (assign to me, my incidents, escalate)."
+    },
+    "scriptEndpoints": {
+      "getMyIncidents": {
+        "options": {
+          "openAPISpec": {
+            "summary": "Get my incidents",
+            "decription": "Returns the open incidents assigned to the currently authenticated user (the impersonated identity), with all fields mapped for this client. Takes no parameters — the user is always the caller and cannot be chosen. Use this to see your own workload or to check which tickets you are responsible for.",
+            "requestSchema": {
+              "type": "object",
+              "properties": {}
+            },
+            "responseSchema": {
+              "type": "object",
+              "properties": {
+                "userId": {
+                  "type": "string"
+                },
+                "count": {
+                  "type": "integer"
+                },
+                "data": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "scripts": [
+          "getMyIncidents"
+        ]
+      },
+      "assignIncidentToMe": {
+        "options": {
+          "openAPISpec": {
+            "summary": "Assign an incident to the current user",
+            "decription": "Assigns the given incident to the currently authenticated user (the impersonated identity) and sets the status to In Progress. Use this to take ownership of a ticket before working on it — for example when you decide to solve an incident yourself. Requires only the incident number; the assignee is always the current user and cannot be chosen.",
+            "requestSchema": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "The incident number to assign, e.g. INC000000001401"
+                }
+              }
+            },
+            "responseSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "The incident number"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "assignee": {
+                  "type": "string",
+                  "description": "The user the incident was assigned to"
+                },
+                "assignedGroup": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "scripts": [
+          "assignIncidentToMe"
+        ]
+      },
+      "escalateTicket": {
+        "options": {
+          "openAPISpec": {
+            "summary": "Escalate a ticket to the agent's support group",
+            "decription": "Escalates an incident: assigns it to the support group configured for the calling agent (server-side mapping, the caller cannot choose the group) and sets the status to Assigned. Use this when a ticket cannot be solved or an action failed. Requires only the incident number.",
+            "requestSchema": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "The incident number to escalate, e.g. INC000000001401"
+                }
+              }
+            },
+            "responseSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "escalatedBy": {
+                  "type": "string"
+                },
+                "assignedGroup": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "scripts": [
+          "escalateTicket"
+        ]
+      }
+    }
+  }
+}
